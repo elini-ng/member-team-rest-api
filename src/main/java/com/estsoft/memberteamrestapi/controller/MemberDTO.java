@@ -7,11 +7,11 @@ import lombok.Getter;
 public class MemberDTO {
     private Long id;
     private String name;
-    private TeamDTO teamDTO;
+    private TeamDTO team;
 
     public MemberDTO(Member member) {
         this.id = member.getId();
         this.name = member.getName();
-        this.teamDTO = new TeamDTO(member.getTeam());
+        this.team = new TeamDTO(member.getTeam());
     }
 }

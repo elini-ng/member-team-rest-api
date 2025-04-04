@@ -5,8 +5,8 @@ import lombok.Getter;
 
 @Getter
 public class TeamDTO {
-    private Long teamId;
-    private String name;
+    private final Long teamId;
+    private final String name;
 
     public TeamDTO(Team team) {
         teamId = team.getId();

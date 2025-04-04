@@ -12,7 +12,7 @@ import java.util.*;
 public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column (name="team_id", updatable = false)
+    @Column (name = "team_id", updatable = false)
     private Long id;
 
     @Column

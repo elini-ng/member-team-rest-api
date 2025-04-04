@@ -1,5 +1,18 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### GET team list
+GET http://localhost:8080/teams
 
-###
+### POST new team
+POST http://localhost:8080/teams
+Content-Type: application/json
+
+{
+  "name" : "Chelsea"
+}
+
+### PUT change team name
+PUT http://localhost:8080/teams/7
+Content-Type: application/json
+
+{
+  "name" : "Aston Villa"
+}

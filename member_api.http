@@ -1,0 +1,11 @@
+### GET member list
+GET http://localhost:8080/members
+
+
+### POST new member
+POST http://localhost:8080/teams/7/members
+Content-Type: application/json
+
+{
+  "name" : "PSG팀원명2"
+}
